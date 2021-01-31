@@ -1,0 +1,8 @@
+.banner{
+  @include bg_image('../assets/images/banner.png');
+  background-position: right center;
+  padding: 20px 0;
+  .page-header{
+    padding: 20px 0;
+  }
+}

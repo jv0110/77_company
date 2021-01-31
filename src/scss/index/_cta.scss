@@ -1,0 +1,36 @@
+.cta{
+  @include bg_image('../assets/images/city.png');
+  background-attachment: fixed;
+  border-top: 1px solid transparent;
+  padding: 50px 0;
+  .text-content{
+    color: #ffffff;
+    .heading{
+      font-family: 'matteo-bold';
+      @media screen and (min-width: 768px){
+        font-size: 40px;
+        line-height: 42px;
+      }
+    }
+    .text{
+      line-height: 18px;
+      @media screen and (min-width: 768px){
+        font-size: 18px;
+      }
+    }
+    .btn{
+      @include btn_round(#FFFFFF, $light-blue);
+      width: 280px;
+      margin-top: 30px;
+      font-family: 'matteo-bold';
+      .icon{
+        padding-left: 10px;
+      }
+    }
+    br{
+      @media screen and (max-width: 402px){
+        display: none;
+      }
+    }
+  }
+}

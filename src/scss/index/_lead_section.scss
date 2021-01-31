@@ -1,0 +1,44 @@
+.lead-section{
+  color: #FFFFFF;
+  .text-content{
+    font-family: 'matteo-regular';
+    .heading{
+      font-family: 'matteo-bold';
+      @media screen and (min-width: 992px){
+        font-size: 38px;
+      }
+      @media screen and (min-width: 1200px){
+        font-size: 46px;
+        line-height: 48px;
+      }
+    }
+    br{
+      @media screen and (max-width: 363px){
+        display: none;
+      }
+      @media screen and (min-width: 768px) and (max-width: 991px){
+        display: none;
+      }
+    }
+    .btn{
+      @include btn_round(#FFFFFF, #FFFFFF);
+      font-weight: 700;
+      width: 300px;
+      margin-top: 20px;
+      .icon{
+        color: $light-blue;
+        padding-left: 10px;
+      }
+    }
+  }
+  .form-container{
+    @include align_center();
+    padding-top: 30px;
+    iframe{
+      height: 550px;
+      @media screen and (min-width: 992px){
+        height: 620px;
+      }
+    }
+  }
+}

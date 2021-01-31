@@ -1,0 +1,24 @@
+@mixin bg_image($img){
+  background-image: url($img);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+@mixin btn_round($bd_color, $color){
+  font-family: 'matteo-bold';
+  border-radius: 20px;
+  border: 1px solid $bd_color;
+  color: $color;
+  padding: 10px;
+  display: inline-block;
+  letter-spacing: 4px;
+  &:hover{
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+@mixin align_center(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

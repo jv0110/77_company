@@ -1,0 +1,25 @@
+.faq{
+  background-color: #4429F2;
+  padding: 220px 0 60px 0;
+  @media screen and (min-width: 700px){
+    padding-top: 100px;
+  }
+  .section-header{
+    .heading{
+      font-family: 'matteo-medium';
+      color: #FFFFFF;
+      padding-bottom: 20px;
+    }
+  }
+  .faq-item{
+    .heading{
+      color: $light-blue;
+      font-family: 'matteo-bold';
+      font-size: 20px;
+    }
+    .text{
+      color: #FFFFFF;
+      padding-bottom: 10px;
+    }
+  }
+}

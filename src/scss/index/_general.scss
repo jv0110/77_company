@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+html{
+  scroll-behavior: smooth;
+}
+.wrapper{
+  overflow-x: hidden;
+}
+body{
+  font-size: 100%;
+  position: relative;
+  font-family: 'matteo-regular';
+}
+.light-blue{
+  color: $light-blue;
+}
+.blue{
+  color: $blue;
+}
+.grey{
+  color: $grey-darker;
+}

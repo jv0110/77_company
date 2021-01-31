@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  @include bg_image('../assets/images/thank_you_bg.png');
+  font-size: 100%;
+  position: relative;
+  font-family: 'matteo-regular';
+}
+html, body, .wrapper{
+  min-height: 100vh;
+}
+.wrapper{
+  overflow: hidden;
+}
+.yellow{
+  color: $yellow;
+}

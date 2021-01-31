@@ -1,0 +1,83 @@
+.process{
+  background-color: $grey;
+  padding-top: 40px;
+  @media screen and (min-width: 992px){
+    padding-top: 60px;
+  }
+  .section-header{
+    .heading{
+      font-family: 'matteo-medium';
+      font-size: 22px;
+      padding-bottom: 14px;
+      .blue{
+        font-family: 'matteo-bold';
+      }
+      @media screen and (min-width: 768px){
+        font-size: 28px;
+      }
+      @media screen and (min-width: 1200px){
+        font-size: 36px;
+      }
+      br{
+        @media screen and (max-width: 767px){
+          display: none;
+        }
+      }
+    }
+  }
+  .text-content{
+    font-family: 'matteo-medium';
+    @media screen and (min-width: 768px){
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px){
+      padding-top: 30px;
+    }
+    .text{
+      color: #000000;
+      br{
+        @media screen and (max-width: 453px){
+          display: none;
+        }
+      }
+    }
+  }
+  .img-container{
+    @include align_center();
+    align-items: flex-end;
+    height: 100%;
+    img{
+      position: relative;
+      z-index: 100;
+      @media screen and (min-width: 768px){
+        max-width: 300px;
+        left: -20px;
+      }
+      @media screen and (min-width: 992px){
+        max-width: 530px;
+        left: -100px;
+      }
+      @media screen and (min-width: 1200px){
+        min-width: 680px;
+        left: -130px;
+        top: -40px;
+      }
+    }
+  }
+  .blue-box{
+    width: 100%;
+    height: 100px;
+    background-color: $blue;
+    margin-top: -40px;
+    @media screen and (min-width: 768px){
+      margin-top: -20px;
+    }
+    @media screen and (min-width: 992px){
+      margin-top: -30px;
+    }
+    @media screen and (min-width: 1200px){
+      height: 120px;
+      margin-top: -80px;
+    }
+  }
+}

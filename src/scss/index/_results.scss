@@ -1,0 +1,61 @@
+.results{
+  @include bg_image('../assets/images/results-bg.png');
+  background-position: center;
+  padding: 60px 0;
+  position: relative;
+  .container{
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .section-header{
+    .heading{
+      color: #FFFFFF;
+      font-size: 22px;
+      padding-bottom: 30px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+  .results-container{
+    position: relative;
+    z-index: 1;
+    .result{
+      font-family: 'matteo-bold';
+      color: #FFFFFF;
+      font-size: 20px;
+      padding-bottom: 20px;
+      .number{
+        font-size: 58px;
+        @media screen and (min-width: 768px){
+          font-size: 78px;
+        }
+      }
+    }
+  }
+  .figure{
+    position: absolute;
+    bottom: -200px;
+    right: 0;
+    z-index: 0;
+    max-width: 280px;
+    @media screen and (min-width: 700px){
+      bottom: -100px;
+    }
+    @media screen and (min-width: 768px){
+      bottom: -140px;
+      right: -120px;
+    }
+    @media screen and (min-width: 992px){
+      bottom: 50%;
+      transform: translateY(65%);
+      right: -190px;
+      max-width: 480px;
+    }
+    @media screen and (min-width: 1200px){
+      right: -130px;
+    }
+    @media screen and (min-width: 1600px){
+      max-width: 580px;
+    }
+  }
+}

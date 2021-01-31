@@ -1,0 +1,11 @@
+@mixin bg_image($img){
+  background-image: url($img);
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+@mixin align_center(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
