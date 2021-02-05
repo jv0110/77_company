@@ -129,13 +129,21 @@ html, body, .wrapper {
     line-height: 18px; }
 
 .main-section .illustrate {
-  height: 100%; }
-  @media screen and (min-width: 768px) {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  @media screen and (min-width: 992px) {
     .main-section .illustrate {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+      -webkit-box-pack: initial;
+      -webkit-justify-content: initial;
+      -ms-flex-pack: initial;
+      justify-content: initial;
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
@@ -150,7 +158,7 @@ html, body, .wrapper {
       .main-section .illustrate img {
         max-width: 680px;
         left: -70px;
-        bottom: -200px; } }
+        bottom: -300px; } }
     @media screen and (min-width: 1200px) {
       .main-section .illustrate img {
         max-width: 880px; } }
