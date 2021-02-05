@@ -1,13 +1,14 @@
 .testimonies{
   padding: 60px 0;
-  display: none;
   .testimonies-container{
     padding: 40px 0;
     .testimony{
-      background-color: $grey;
       width: 100%;
-      height: 120px;
+      height: 100%;
       margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .section-footer{
