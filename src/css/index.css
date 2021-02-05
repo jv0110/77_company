@@ -535,15 +535,25 @@ body {
         margin-top: -80px; } }
 
 .testimonies {
-  padding: 60px 0;
-  display: none; }
+  padding: 60px 0; }
   .testimonies .testimonies-container {
     padding: 40px 0; }
     .testimonies .testimonies-container .testimony {
-      background-color: #EDEDED;
       width: 100%;
-      height: 120px;
-      margin-bottom: 20px; }
+      height: 100%;
+      margin-bottom: 20px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
   .testimonies .section-footer .btn {
     font-family: 'matteo-bold';
     border-radius: 20px;
