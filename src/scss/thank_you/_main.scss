@@ -75,8 +75,10 @@
   }
   .illustrate{
     height: 100%;
-    @media screen and (min-width: 768px){
-      display: flex;
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 992px){
+      justify-content: initial;
       align-items: center;
     }
     img{
@@ -88,7 +90,7 @@
       @media screen and (min-width: 992px){
         max-width: 680px;
         left: -70px;
-        bottom: -200px;
+        bottom: -300px;
       }
       @media screen and (min-width: 1200px){
         max-width: 880px;
